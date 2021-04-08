@@ -57,3 +57,5 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 python main.py
 ```
+
+![Mass marines in opponent's main base](/assets/screenshots/knock-knock-whos-there-mass-unupgraded-marines.png)
