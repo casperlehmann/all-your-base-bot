@@ -1,10 +1,21 @@
+# All Your Base Bot
+
+This is a StarCraft II Bot.
+
+* Proof of concept.
+* Work in progress.
+* Does actually beat a medium difficulty Protoss AI.
+
 ## Setup
 
 Read this first: https://github.com/Blizzard/s2client-proto#downloads
 
+Have StarCraft II installed. On a Mac, it is typically in `/Applications/StarCraft II/`.
+
 Download map packs and `iagreetotheeula`.
 
 ``` bash
+
 export MAPSDIR=/Applications/StarCraft\ II/Maps
 
 mkdir map_packs
@@ -34,4 +45,15 @@ unzip -P iagreetotheeula ./Ladder2019Season1.zip -d $MAPSDIR
 unzip -P iagreetotheeula ./Ladder2019Season2.zip -d $MAPSDIR
 unzip -P iagreetotheeula ./Ladder2019Season3.zip -d $MAPSDIR
 unzip -P iagreetotheeula ./Melee.zip -d $MAPSDIR
+
+cd ..
+```
+
+Run POC::
+
+``` bash
+python -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
+python main.py
 ```
